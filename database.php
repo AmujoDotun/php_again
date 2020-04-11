@@ -1,8 +1,13 @@
 <?php
+
+require 'database/connection.php';
 require 'class101.php';
 require 'function.php';
 
-$pdo = connectDB();
+
+$pdo = Connection::make();
+// $pdo = connectDB();
+
 
 $classTask = fetchAllTask($pdo);
 
