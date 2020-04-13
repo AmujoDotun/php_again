@@ -1,7 +1,9 @@
 <?php
 
+$config = require 'config.php';
 require 'database/connection.php';
 require 'database/QueryBuilder.php';
+
 
 
 
@@ -10,4 +12,6 @@ require 'database/QueryBuilder.php';
 
 
 // instantiating QueryBuilder
-$query = new QueryBuilder(Connection::make());
+$query = new QueryBuilder(
+    Connection::make($config['database'])
+);
