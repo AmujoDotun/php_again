@@ -9,8 +9,11 @@ require 'class101.php';
 $pdo = Connection::make();
 // $pdo = connectDB();
 
+
+// instantiating QueryBuilder
 $query = new QueryBuilder($pdo);
 
+// calling selectAll method in the QueryBuilder
 $classTask = $query->selectAll('todos');
 
 
