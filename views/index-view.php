@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <?php
-require 'second.php';
-require 'array.php';
-require 'assoArray.php';
+require 'views/dump/second.php';
+require 'views/dump/array.php';
+require 'views/dump/assoArray.php';
 // require 'class101.php';
  ?>
     <meta charset="UTF-8">
@@ -21,6 +21,12 @@ require 'assoArray.php';
 </head>
 <body>
 
+        <nav>
+            <ul>
+                <li><a href="views/about.view.php">About-Us</a></li>
+                <li><a href="views/contact.view.php">Contact-Us</a></li>
+            </ul>
+        </nav>
     <header>
     
         
