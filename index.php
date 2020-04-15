@@ -1,15 +1,16 @@
 <?php
 
 
-require 'boostrap.php';
-require 'class101.php';
-// require 'function.php';
+require 'core/boostrap.php';
 
 
 
 
-// calling selectAll method in the QueryBuilder
-$classTask = $query->selectAll('todos');
+$router = new Router;
+
+require 'routes.php';
+
+$uri = trim($_SERVER['REQUEST_URI'], '/');
 
 
-require 'index-view.php';
+require $router->direct($uri);
