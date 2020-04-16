@@ -23,8 +23,8 @@ require 'views/dump/assoArray.php';
 
         <nav>
             <ul>
-                <li><a href="views/about.view.php">About-Us</a></li>
-                <li><a href="views/contact.view.php">Contact-Us</a></li>
+                <li><a href="/about">About-Us</a></li>
+                <li><a href="/contact-us">Contact-Us</a></li>
             </ul>
         </nav>
     <header>
