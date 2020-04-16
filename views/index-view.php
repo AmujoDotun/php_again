@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<?php
-require 'views/dump/second.php';
-require 'views/dump/array.php';
-require 'views/dump/assoArray.php';
-// require 'class101.php';
- ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-  <style>
-    header {
-            background: #e3e3e3;
-            padding:2em;
-            text-align: center;
-        }
-  </style>
-</head>
-<body>
+<?php 
+include 'includes/header.view.php'; 
+include 'includes/nav.view.php';
+?>
 
-        <nav>
-            <ul>
-                <li><a href="/about">About-Us</a></li>
-                <li><a href="/contact-us">Contact-Us</a></li>
-            </ul>
-        </nav>
+        
     <header>
     
         
@@ -87,5 +64,5 @@ require 'views/dump/assoArray.php';
        
        </li>
     </ul>
-</body>
-</html>
+
+<?php include 'includes/footer.view.php'; ?>
