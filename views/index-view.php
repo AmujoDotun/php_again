@@ -10,6 +10,15 @@ include 'includes/nav.view.php';
         <h1><?= $greeting ?></h1>
     </header>
 
+    <h1>Submit Your Name</h1>
+
+
+        <form action="/names" method="POST">
+            <input type="text" name="name">
+
+            <button type="submit">Submit</button>
+        </form>
+
         <div class="class101_asset">
             <h1>Tasks from Class</h1>
             <ul>
