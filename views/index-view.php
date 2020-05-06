@@ -9,6 +9,9 @@ include 'includes/nav.view.php';
         
         <h1><?= $greeting ?></h1>
     </header>
+    <?php foreach($users as $user) : ?>
+        <li><?= $user->name ; ?></li>
+    <?php endforeach; ?>
 
     <h1>Submit Your Name</h1>
 
